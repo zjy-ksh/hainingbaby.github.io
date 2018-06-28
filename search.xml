@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[关于markdown语法介绍的基本示例]]></title>
+    <url>%2F2018%2F06%2F27%2Fmarkdown-demo%2F</url>
+    <content type="text"><![CDATA[在此查看.md源文件正文参考如下:Text can be bold, italic, or strikethrough. Link to another page. There should be whitespace between paragraphs. There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. Header 1This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. Header 2 This is a blockquote following a header. When something is important enough, you do it even if the odds are not in your favor. Header 312345// Javascript code with syntax highlighting.var fun = function lang(l) &#123; dateformat.i18n = require('./lang/' + l) return true;&#125; 1234# Ruby code with syntax highlightingGitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, "= #&#123;version&#125;")end Header 4 This is an unordered list following a header. This is an unordered list following a header. This is an unordered list following a header. Header 5 This is an ordered list following a header. This is an ordered list following a header. This is an ordered list following a header. Header 6 head1 head two three ok good swedish fish nice out of stock good and plenty nice ok good oreos hmm ok good zoute drop yumm There’s a horizontal rule below this. Here is an unordered list: Item foo Item bar Item baz Item zip And an ordered list: Item one Item two Item three Item four And a nested list: level 1 item level 2 item level 2 item level 3 item level 3 item level 1 item level 2 item level 2 item level 2 item level 1 item level 2 item level 2 item level 1 item Small image Large image Definition lists can be used with HTML syntax.NameGodzillaBorn1952BirthplaceJapanColorGreen 1Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. 1The final element.]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>备忘录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo备忘录]]></title>
+    <url>%2F2018%2F03%2F07%2FHexo_memo%2F</url>
+    <content type="text"><![CDATA[这是我的博客的第一篇文章，以后会多在这里分享一些我的成长和感悟。 Hexo基本指令1hexo init 在当前文件夹建立并初始化一个网站1hexo new [layout] &quot;title&quot; layout为页面布局，默认是在_config.yml文件里设置的布局，此命令新建一篇文章1hexo clean 清除数据库和 public 文件夹1hexo g 生成网站静态文件1hexo p 发表为草稿1hexo s 部署到本地服务器，打开http://localhost:4000/即可查看1hexo d 部署到 usrname.github.io，运行此命令需要事先安装 hexo-deployer-git ，使用如下命令：1npm install hexo-deployer-git --save 安装完成之后，在_config,yml中配置deploy：123deploy: type: git repo: your github address 更多设置参见Hexo指令]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>备忘录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F03%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
