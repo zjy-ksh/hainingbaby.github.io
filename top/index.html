@@ -79,7 +79,7 @@
 
 
 
-  <meta name="keywords" content="hainingbaby,博客,Hexo,google,github" />
+  <meta name="keywords" content="top,文章阅读量排行" />
 
 
 
@@ -90,17 +90,18 @@
 
 
 
-<meta name="description" content="O--K">
+<meta name="description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
+<meta name="keywords" content="top,文章阅读量排行">
 <meta property="og:type" content="website">
-<meta property="og:title" content="top">
+<meta property="og:title" content="热门文章">
 <meta property="og:url" content="http://yoursite.com/top/index.html">
 <meta property="og:site_name" content="hainingbaby&#39;s notes">
-<meta property="og:description" content="O--K">
+<meta property="og:description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-05T10:21:21.574Z">
+<meta property="og:updated_time" content="2018-07-05T10:57:31.526Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="top">
-<meta name="twitter:description" content="O--K">
+<meta name="twitter:title" content="热门文章">
+<meta name="twitter:description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 
 
 
@@ -136,7 +137,7 @@
 
 
 
-  <title>top | hainingbaby's notes</title>
+  <title>热门文章 | hainingbaby's notes</title>
   
 
 
@@ -290,7 +291,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">top</h1>
+	<h1 class="post-title" itemprop="name headline">热门文章</h1>
 
 
 
@@ -302,7 +303,30 @@
       <div class="post-body">
         
         
-          
+          <p><div id="top"></div></p>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz", "Os4H2jLEsRxxX1HJI6KoHpLu");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var content="<a href='"+"https://hainingbaby.github.io/"+url+"'>"+title+"</a>"+"<br />"+"<font color='#555'>"+"阅读次数："+time+"</font>"+"<br /><br />";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
         
       </div>
       
@@ -320,10 +344,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
